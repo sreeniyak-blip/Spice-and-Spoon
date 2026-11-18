@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Spice & Spoon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Spice <span>&</span> Spoon</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="menu.html" class="order-btn">Order Now</a>
+        </nav>
+    </header>
+
+    <section class="reservation-section">
+
+        <div class="reservation-box">
+
+            <p class="welcome">BOOK YOUR TABLE</p>
+
+            <h1>Make A Reservation</h1>
+
+            <p>Reserve your table and enjoy a wonderful dining experience.</p>
+
+            <form id="reservationForm">
+
+                <label>Full Name</label>
+                <input type="text" id="customerName"
+                       placeholder="Enter your name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="customerEmail"
+                       placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="customerPhone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9]{10}" maxlength="10" required>
+
+                <label>Reservation Date</label>
+                <input type="date" id="bookingDate" required>
+
+                <label>Reservation Time</label>
+                <input type="time" id="bookingTime" required>
+
+                <label>Number of Guests</label>
+                <select id="guests" required>
+                    <option value="">Select guests</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+
+                <button type="submit">Book My Table</button>
+
+            </form>
+
+            <p id="bookingMessage"></p>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

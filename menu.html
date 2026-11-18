@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Spice & Spoon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Spice <span>&</span> Spoon</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="cart.html" class="order-btn">View Cart</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+
+        <p class="welcome">FRESH & DELICIOUS</p>
+
+        <h1>Our Special Menu</h1>
+
+        <p class="menu-intro">
+            Discover our delicious dishes made with love.
+        </p>
+
+        <div class="food-container">
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+                     alt="Cheese Pizza">
+                <h2>Cheese Pizza</h2>
+                <p>Delicious pizza topped with cheese.</p>
+                <h3>₹249</h3>
+                <button onclick="addToCart('Cheese Pizza',249)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                     alt="Burger">
+                <h2>Classic Burger</h2>
+                <p>Juicy burger with fresh vegetables.</p>
+                <h3>₹149</h3>
+                <button onclick="addToCart('Classic Burger',149)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+                     alt="Pasta">
+                <h2>Italian Pasta</h2>
+                <p>Creamy pasta with delicious sauce.</p>
+                <h3>₹199</h3>
+                <button onclick="addToCart('Italian Pasta',199)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624"
+                     alt="Noodles">
+                <h2>Veg Noodles</h2>
+                <p>Hot and tasty vegetable noodles.</p>
+                <h3>₹179</h3>
+                <button onclick="addToCart('Veg Noodles',179)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart | Spice & Spoon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Spice <span>&</span> Spoon</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="menu.html" class="order-btn">Continue Shopping</a>
+        </nav>
+    </header>
+
+    <section class="cart-section">
+
+        <h1>My Shopping Cart</h1>
+        <p class="cart-subtitle">Your delicious choices are waiting!</p>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <h2>Total Amount: ₹<span id="totalAmount">0</span></h2>
+
+            <button onclick="checkout()">
+                Proceed to Checkout
+            </button>
+
+            <button class="clear-btn" onclick="clearCart()">
+                Clear Cart
+            </button>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
